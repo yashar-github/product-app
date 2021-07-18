@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  product:
+    container_name: product-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: product-app
+    ports:
+      - 8080:8080
